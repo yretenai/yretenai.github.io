@@ -1,0 +1,159 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    width: 100%;
+    height: 100%;
+    background: #222;
+}
+
+#wrapper, #back {
+    font-size: 16pt;
+    color: #eee;
+    font-family: 'Asap', sans-serif;
+    font-weight: 400;
+}
+
+#wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+#front {
+    padding: 15pt;
+    overflow: hidden;
+}
+
+.bold {
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+    font-size: 2em;
+}
+
+#back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.25;
+    z-index: 0;
+}
+
+header {
+    font-size: 3em;
+    position: fixed;
+    left: 445pt;
+    right: 0;
+    background: #222;
+    top: 0;
+    z-index: 1;
+    padding: 10pt;
+
+    nav {
+        width: 700px;
+        position: relative;
+        font-size: 0.33em;
+        a {
+            color: #aaa;
+        }
+    }
+}
+
+footer {
+    font-size: 0.8em;
+    text-align: center;
+    padding: 0 0 15pt 0;
+}
+
+.linkspace {
+    list-style: none;
+    padding: 0;
+
+    li {
+        a {
+            color: #eee;
+            font-size: 2em;
+            text-decoration: none;
+            position: relative;
+            padding-right: 15pt;
+
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 5pt;
+                right: 0pt;
+                top: 0;
+                bottom: 0;
+                background: linear-gradient(135deg, var(--project-link-color-start) 0%, var(--project-link-color-end) 100%);
+                transform: skewX(-15deg);
+            }
+
+            &:hover {
+                color: var(--project-link-color-start);
+            }
+        }
+
+        hr {
+            border: none;
+            width: 50%;
+            margin: 10pt 5pt;
+            height: 5pt;
+            background: linear-gradient(90deg, #eee 0%, transparent 100%);
+        }
+
+        span {
+            font-size: 1.5em;
+            font-style: italic;
+        }
+    }
+}
+
+@media(max-width: 1200px) {
+    #front {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        left: 0;
+        font-size: 2.5em;
+    }
+
+    .linkspace {
+        li {
+            a {
+                font-size: 1.5em;
+
+                &:after {
+                    display: none;
+                }
+            }
+
+            h1 {
+                font-size: 1.75em;
+            }
+            
+            span {
+                display: block;
+                font-size: 1em;
+            }
+
+            hr {
+                background: transparent;
+            }
+        }
+    }
+}
+
+@import "style.diagonal.less";

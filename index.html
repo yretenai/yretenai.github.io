@@ -1,9 +1,49 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Asap|Montserrat:600&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="/src/style/app.less" />
+    <link rel="canonical" href="https://chomp.gg/" />
     <title>chomp</title>
+    <script src="/src/script/app.ts"></script>
   </head>
   <body>
-  soon
+    <div id="wrapper">
+      <div id="front">
+        <header class="bold">
+          <span></span>
+          <nav class="bold"></nav>
+        </header>
+        <ul class="linkspace">
+          <template id="link-template">
+            <li>
+              <a href="#" title="" target="_blank" class="bold"></a>
+              <span></span>
+            </li>
+          </template>
+          <template id="link-text">
+            <li>
+              <span></span>
+            </li>
+          </template>
+          <template id="link-separator">
+            <li>
+              <hr />
+            </li>
+          </template>
+          <template id="link-header">
+            <li>
+              <h1 class="bold"></h1>
+            </li>
+          </template>
+        </ul>
+        <footer>
+          Coded and designed with 🐲 and 💗 by Naomi / HealingBrew.
+        </footer>
+      </div>
+    </div>
   </body>
 </html>

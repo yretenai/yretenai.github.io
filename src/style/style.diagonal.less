@@ -1,0 +1,21 @@
+.linkspace {
+    transform: skewX(-20deg);
+    position: relative;
+    left: 345pt;
+
+    li {
+        transform: skewX(20deg);
+    }
+}
+
+@media(max-width: 1200px) {
+    .linkspace {
+        transform: skewX(0);
+        left: 0;
+        padding: 15pt;
+    
+        li {
+            transform: skewX(0);
+        }
+    }
+}

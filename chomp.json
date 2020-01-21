@@ -1,0 +1,106 @@
+{
+    "": "Hi! If you're reading this then you're looking at the source of my site! This file exists purely so I don't have to recompile the typescript sources every time I want to update something.",
+    "svc": "healingbrew / chomp",
+    "dsc": "I'm Naomi, I enjoy breaking games apart and figuring out how they tick. You can read more about me in the <a href=\"about.html\">about page</a>.",
+    "entries": [
+        {
+            "name": "Data Projects",
+            "isHeader": true
+        },
+        {
+            "name": "Cethleann",
+            "sling": "cethleann",
+            "description": "KTGL Engine File Format Research",
+            "href": "healingbrew/Cethleann",
+            "color": [
+                "#8e3a45",
+                "#241e21"
+            ]
+        },
+        {
+            "name": "libxiv",
+            "sling": "libxiv",
+            "description": "Final Fantasy XIV File Format Research",
+            "href": "healingbrew/libxiv",
+            "color": [
+                "#7398aa",
+                "#fbf7d4"
+            ]
+        },
+        {
+            "name": "HeroesToolkit",
+            "sling": "heroes-toolkit",
+            "description": "Heroes of the Storm Data Scripts",
+            "href": "healingbrew/HeroesToolkit",
+            "color": [
+                "#598ee2",
+                "#4f316d"
+            ]
+        },
+        {
+            "name": "Overtools",
+            "sling": "overtools",
+            "description": "Overwatch Data Processing Library",
+            "href": "overtools/OWLib",
+            "color": [
+                "#f97f00",
+                "#424242"
+            ]
+        },
+        {   
+            "name": "ProjectZeroDawn",
+            "sling": "project-zero-dawn",
+            "description": "Decima File Format Research",
+            "href": "healingbrew/ProjectZeroDawn",
+            "color": [
+                "#aa4320",
+                "#cc4846"
+            ]
+        },
+        {
+            "name": "WOFFington",
+            "sling": "woffington",
+            "description": "World of Final Fantasy Data Research",
+            "href": "healingbrew/WOFFington",
+            "color": [
+                "#ad2f9c",
+                "#e3595b"
+            ]
+        },
+        {
+            "name": "Dragapult",
+            "sling": "dragapult",
+            "description": "Pokemon Sword/Shield Data Processing Library",
+            "href": "healingbrew/Dragapult",
+            "color": [
+                "#da5e6e",
+                "#5ccac9"
+            ]
+        },
+        {
+            "name": "HFSExtract",
+            "sling": "hfs-extract",
+            "description": "Vindictus HFS Archive Uncompressor",
+            "href": "healingbrew/HFSExtract",
+            "color": [
+                "#b57835",
+                "#560315"
+            ]
+        },
+        {
+            "name": "UAssetParser",
+            "sling": "uasset-parser",
+            "description": "Unreal Engine UAsset/UObject Parser",
+            "href": "healingbrew/UAssetParser",
+            "color": [
+                "#a00605",
+                "#010202"
+            ]
+        },
+        {
+            "name": "Experiments",
+            "isHeader": true,
+            "isHidden": true
+        }
+    ]
+}
