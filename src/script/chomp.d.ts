@@ -1,7 +1,15 @@
 declare interface ChompData {
-    svc: string;
-    dsc: string;
+    name: string;
+    description: string | Array<ChompDescriptionElement>;
+    about: ChompDataAbout;
+    style: string;
     entries: Array<ChompDataEntry>;
+}
+
+declare interface ChompDescriptionElement {
+    tag: string;
+    attributes: { [key: string]: string } | null;
+    text: string | Array<ChompDescriptionElement>;
 }
 
 declare interface ChompDataEntry {
@@ -13,4 +21,12 @@ declare interface ChompDataEntry {
     isSeparator: boolean | null;
     isHeader: boolean | null;
     isHidden: boolean | null;
+    colorAdjust: number | null;
+}
+
+declare interface ChompDataAbout {
+    name: string;
+    image: string;
+    links: Array<ChompDataEntry>;
+    about: string | Array<ChompDescriptionElement>;
 }

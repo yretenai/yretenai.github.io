@@ -52,12 +52,22 @@ h1 {
 header {
     font-size: 3em;
     position: fixed;
-    left: 445pt;
+    left: 0;
     right: 0;
     background: #222;
     top: 0;
     z-index: 1;
     padding: 10pt;
+    border-bottom: 1pt solid #333333;
+
+    &:before {
+        content: "🐲";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        font-size: 1.5em;
+        opacity: 0.25;
+    }
 
     nav {
         width: 700px;
@@ -69,10 +79,19 @@ header {
     }
 }
 
-footer {
-    font-size: 0.8em;
+#footer {
     text-align: center;
-    padding: 0 0 15pt 0;
+    margin-top: 15pt;
+
+    footer {
+        font-size: 0.8em;
+        display: inline-block;
+        text-align: center;
+        margin: 0;
+        padding: 0 50pt;
+        padding-top: 15pt;
+        border-top: 1pt solid #333333;
+    }
 }
 
 .linkspace {
@@ -80,9 +99,15 @@ footer {
     padding: 0;
 
     li {
+        padding-left: 15pt;
+
+        &.header {
+            padding-left: 0;
+        }
+
         a {
             color: #eee;
-            font-size: 2em;
+            font-size: 1.5em;
             text-decoration: none;
             position: relative;
             padding-right: 15pt;
@@ -99,9 +124,24 @@ footer {
                 transform: skewX(-15deg);
             }
 
-            &:hover {
-                color: var(--project-link-color-start);
+            span {
+                padding-right: 0.15em;
+                font-size: 1.5em;
+                &:hover {
+                    background: linear-gradient(0deg, var(--project-link-color-hover) 0%, var(--project-link-color-hover2) 100%);
+                    color: transparent;
+                    background-clip: text;
+                    display: inline-block;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    -moz-text-fill-color: transparent;
+                }
             }
+        }
+
+        > span {
+            padding-left: 0.15em;
+            font-size: 2em;
         }
 
         hr {
@@ -113,27 +153,75 @@ footer {
         }
 
         span {
-            font-size: 1.5em;
             font-style: italic;
         }
     }
 }
 
 @media(max-width: 1200px) {
+    * {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
     #front {
         margin: 0;
         padding: 0;
     }
 
     header {
-        left: 0;
+        left: 0 !important;
         font-size: 2.5em;
+        padding-bottom: 10pt !important;
+        margin-bottom: 5pt !important;
+        
+        &:before {
+            left: 0 !important;
+            right: 0 !important;
+            top: 15pt !important;
+            opacity: 0.1;
+        }
+
+        width: 100% !important;
+        text-align: center;
+        position: relative;
+
+        nav {
+            width: 90% !important;
+            margin: 0 auto !important;
+        }
+    }
+
+    header, footer {
+        background: #1a1a1a;
+    }
+        
+    footer {
+        display: block;
+        padding: 15pt 0 !important;
+        margin-top: 10pt !important;
+        width: 100%;
     }
 
     .linkspace {
+        width: 95% !important;
+        margin: 0 auto !important;
+
         li {
+            margin-bottom: 5pt !important;
+
+            &, a, span {
+                padding: 0;
+                margin: 0;
+                font-style: normal !important;
+            }
+
             a {
                 font-size: 1.5em;
+
+                span {
+                    font-size: 1em;
+                }
 
                 &:after {
                     display: none;
@@ -141,9 +229,15 @@ footer {
             }
 
             h1 {
+                text-align: center;
                 font-size: 1.75em;
             }
             
+            > span {
+                font-size: 1.3em;
+                padding-left: 15pt;
+            }
+
             span {
                 display: block;
                 font-size: 1em;
@@ -157,3 +251,4 @@ footer {
 }
 
 @import "style.diagonal.less";
+@import "style.vertical.less";

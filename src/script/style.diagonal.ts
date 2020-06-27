@@ -1,4 +1,4 @@
-export function Style(linkspace: any) {
+export function Style(linkspace: HTMLUListElement) {
     const calculateOffset = () => {
         if(document.documentElement.clientWidth > 1200) {
             linkspace.style.marginLeft = `${0.272 * (window.scrollY)}pt`;
