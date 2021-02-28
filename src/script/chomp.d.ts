@@ -1,5 +1,6 @@
 declare interface ChompData {
     name: string;
+    sub: string;
     description: string | Array<ChompDescriptionElement>;
     about: ChompDataAbout;
     style: string;

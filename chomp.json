@@ -1,6 +1,7 @@
 {
     "": "Hi! If you're reading this then you're looking at the source of my site! This file exists purely so I don't have to recompile the typescript sources every time I want to update something.",
-    "name": "yretenai",
+    "name": "Lilith Naomi",
+    "sub": "Yretenai",
     "description": [
         {
             "tag": "span", 
@@ -10,7 +11,16 @@
     "about": {
         "name": "Naomi - Yretenai",
         "image": "",
-        "links": [],
+        "links": [
+            {
+                "name": "Twitter",
+                "href": "https://twitter.com/yretenai"
+            },
+            {
+                "name": "GitHub",
+                "href": "https://github.com/yretenai"
+            }
+        ],
         "about": []
     },
     "style": "vertical",
@@ -123,40 +133,28 @@
         {
             "name": "standard_dragon",
             "sling": "stdragon",
-            "description": "Common Utility Library (C++)",
+            "description": "Standard Utility Library (C++)",
             "href": "yretenai/standard_dragon",
             "color": [
-                "#A60852",
-                "#BF0A4C"
+                "#FF505F",
+                "#FE4AA3",
+                "#C05285",
+                "#C05285"
             ],
             "colorAdjust": 1.8
         },
         {
             "name": "dragonlib",
             "sling": "dragonlib",
-            "description": "Common Utility Library (C#)",
+            "description": "Standard Utility Library (C#)",
             "href": "yretenai/DragonLib",
             "color": [
-                "#798BF2",
-                "#5E75F2"
+                "#00DDFF",
+                "#5E75F2",
+                "#00DDFF",
+                "#00DDFF"
             ],
             "colorAdjust": 1.8
-        },
-        {
-            "name": "Experiments",
-            "isHeader": true,
-            "isHidden": true
-        },
-        {
-            "name": "Probability Calculator",
-            "sling": "probability",
-            "description": "25% * 4 != 100%",
-            "href": "/calc.html",
-            "isHidden": true,
-            "color": [
-                "#ffffff",
-                "#ffffff"
-            ]
         }
     ]
 }

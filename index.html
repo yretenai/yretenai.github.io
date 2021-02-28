@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css?family=Asap|Montserrat:600&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="/src/style/app.less" />
     <link rel="canonical" href="https://chomp.gg/" />
     <title>chomp</title>
@@ -13,9 +12,10 @@
   <body>
     <div id="wrapper">
       <div id="front">
-        <header class="bold">
+        <header>
+          <span class="bold"></span>
           <span></span>
-          <nav class="bold"></nav>
+          <nav></nav>
         </header>
         <ul class="linkspace">
           <template id="link-template">
@@ -42,6 +42,13 @@
         </ul>
         <div id="footer">
           <footer>
+            <ul id="footer-links">
+              <template id="footer-link">
+                <li class="template">
+                  <a href="#" title="" target="_blank" class="bold"><span id="link-template-text"></span></a>                </li>
+              </template>
+            </ul>
+            <br/>
             With 🐲 and 💗 by Naomi / Yretenai.
           </footer>
         </div>
