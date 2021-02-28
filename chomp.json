@@ -4,14 +4,8 @@
     "description": [
         {
             "tag": "span", 
-            "text": "I'm Naomi, I enjoy breaking games apart and figuring out how they tick. You can read more about me in the "
-        },
-        {
-            "tag": "a",
-            "attributes": { "href": "/about.html" }, 
-            "text": "about page"
-        },
-        {"tag": "span", "text": "." }
+            "text": "I'm Naomi, I enjoy breaking games apart and figuring out how they tick."
+        }
     ],
     "about": {
         "name": "Naomi - Yretenai",
@@ -45,7 +39,8 @@
                 "#7398aa",
                 "#fbf7d4"
             ],
-            "colorAdjust": 0.7
+            "colorAdjust": 0.7,
+            "isHidden": true
         },
         {
             "name": "HeroesToolkit",
@@ -78,7 +73,8 @@
                 "#EC5D2C",
                 "#cc4846"
             ],
-            "colorAdjust": 1.2
+            "colorAdjust": 1.2,
+            "isHidden": true
         },
         {
             "name": "WOFFington",
@@ -88,7 +84,8 @@
             "color": [
                 "#EA65D8",
                 "#ad2f9c"
-            ]
+            ],
+            "isHidden": true
         },
         {
             "name": "Dragapult",
@@ -99,7 +96,8 @@
                 "#5ccac9",
                 "#356C6C"
             ],
-            "colorAdjust": 2.5
+            "colorAdjust": 2.5,
+            "isHidden": true
         },
         {
             "name": "HFSExtract",
@@ -119,6 +117,28 @@
             "color": [
                 "#FF3C3C",
                 "#a03030"
+            ],
+            "colorAdjust": 1.8
+        },
+        {
+            "name": "standard_dragon",
+            "sling": "stdragon",
+            "description": "Common Utility Library (C++)",
+            "href": "yretenai/standard_dragon",
+            "color": [
+                "#A60852",
+                "#BF0A4C"
+            ],
+            "colorAdjust": 1.8
+        },
+        {
+            "name": "dragonlib",
+            "sling": "dragonlib",
+            "description": "Common Utility Library (C#)",
+            "href": "yretenai/DragonLib",
+            "color": [
+                "#798BF2",
+                "#5E75F2"
             ],
             "colorAdjust": 1.8
         },
