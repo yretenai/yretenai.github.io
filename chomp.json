@@ -41,13 +41,25 @@
             "colorAdjust": 2
         },
         {
-            "name": "libxiv",
-            "sling": "libxiv",
+            "name": "yshtola",
+            "sling": "yshtola",
             "description": "Final Fantasy XIV File Format Research",
-            "href": "yretenai/libxiv",
+            "href": "yretenai/yshtola",
             "color": [
                 "#7398aa",
                 "#fbf7d4"
+            ],
+            "colorAdjust": 0.7,
+            "isHidden": true
+        },
+        {
+            "name": "alfiq",
+            "sling": "alfiq",
+            "description": "Elder Scrolls Online File Format Research",
+            "href": "yretenai/alfiq",
+            "color": [
+                "#8C8669",
+                "#D9D3B8"
             ],
             "colorAdjust": 0.7,
             "isHidden": true
@@ -61,7 +73,8 @@
                 "#598ee2",
                 "#4f316d"
             ],
-            "colorAdjust": 2
+            "colorAdjust": 2,
+            "isHidden": true
         },
         {
             "name": "Overtools",
@@ -117,7 +130,8 @@
             "color": [
                 "#ff8c1e",
                 "#b57835"
-            ]
+            ],
+            "isHidden": true
         },
         {
             "name": "UAssetParser",
@@ -153,6 +167,19 @@
                 "#5E75F2",
                 "#00DDFF",
                 "#00DDFF"
+            ],
+            "colorAdjust": 1.8
+        },
+        {
+            "name": "yordle",
+            "sling": "yordle",
+            "description": "League of Legends File IO",
+            "href": "yretenai/yordle",
+            "color": [
+                "#EDB852",
+                "#5A3E1E",
+                "#EDB852",
+                "#EDB852"
             ],
             "colorAdjust": 1.8
         }
