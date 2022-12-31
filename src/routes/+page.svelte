@@ -9,7 +9,7 @@
         const noMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
         function triggerEmote() {
-            const element = new FloatingEmote({
+            const element: FloatingEmote = new FloatingEmote({
                 props: {
                     done: () => element.$destroy(),
                     emoji: data.fun.emoji[Math.floor(Math.random() * data.fun.emoji.length)],
@@ -56,7 +56,7 @@
         </section>
         <footer>
             {#each data.attribution as attribution}
-                <a href={attribution.href} target="_blank">{attribution.subject}</a><br/>
+                <a href={attribution.href} target="_blank" rel="noreferrer">{attribution.subject}</a><br/>
             {/each}
         </footer>
     </article>

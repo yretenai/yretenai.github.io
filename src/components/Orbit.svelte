@@ -8,7 +8,7 @@
 
 <div class="link-element">
     <div class="normal">
-        <a {href} target="_blank">
+        <a {href} target="_blank" rel="noreferrer">
             {#if color}
                 <img src="/out/{name}.svg" alt={display}/>
             {:else}
@@ -18,7 +18,7 @@
         </a>
     </div>
     <div class="orbit" style:animation-duration="{distance/100*25}s" style:width="{distance + 5}pt" style:height="{distance + 5}pt" style:left="-{distance/2}pt" style:top="-{distance/2}pt">
-        <a class="dot" {href} target="_blank" style:animation-duration="{distance/100*25}s"
+        <a class="dot" {href} target="_blank" rel="noreferrer" style:animation-duration="{distance/100*25}s"
            data-tooltip={display}>
             {#if color}
                 <img src="/out/{name}.svg" alt={display}/>
