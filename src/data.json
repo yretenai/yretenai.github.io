@@ -1,0 +1,63 @@
+{
+  "name": "Naomi",
+  "flair": ["lesbianlilly", "translilly"],
+  "description": "Just a transgender lesbian who likes to reverse engineer games.",
+  "attribution": [
+    {
+      "subject": "Neptune image is made by Judy Schmidt",
+      "href": "https://www.flickr.com/photos/geckzilla/39103611231"
+    },
+    {
+      "subject": "moth egg emote is made by chesapeake aka @root@moth.zone",
+      "href": "https://moth.zone/users/roo"
+    },
+    {
+      "subject": "lilly emotes are made by Maddie aka @maddievision@akiba.party",
+      "href": "https://akiba.party/@maddievision"
+    }
+  ],
+  "links": [
+    {
+      "id": "fediverse",
+      "name": "Fediverse",
+      "href": "https://a.chronovore.dev/@naomi",
+      "distance": 300,
+      "color": true
+    },
+    {
+      "id": "lavaforge",
+      "name": "Lavaforge",
+      "href": "https://lavaforge.org/legiayayana",
+      "distance": 350
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "href": "https://github.com/yretenai",
+      "distance": 400
+    },
+    {
+      "id": "blog",
+      "name": "Blog",
+      "href": "https://chronovore.dev/posts/",
+      "distance": 450
+    },
+    {
+      "id": "pronoun",
+      "name": "Pronouns",
+      "href": "https://en.pronouns.page/@legiayayana",
+      "distance": 500
+    }
+  ],
+  "fun": {
+    "interval": 1000,
+    "rate": 0.33,
+    "emoji": [
+      "nixos",
+      "windows",
+      "lesbianlilly",
+      "translilly",
+      "mothegg"
+    ]
+  }
+}
