@@ -5,19 +5,19 @@
     import FloatingEmote from "../components/FloatingEmote.svelte";
     import * as svelte from "svelte";
 
+    function triggerEmote() {
+        const element: FloatingEmote = new FloatingEmote({
+            props: {
+                done: () => element.$destroy(),
+                emoji: data.fun.emoji[Math.floor(Math.random() * data.fun.emoji.length)],
+            },
+            target: document.querySelector("#gimmick")
+        });
+
+    }
+
     svelte.onMount(() => {
         const noMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-
-        function triggerEmote() {
-            const element: FloatingEmote = new FloatingEmote({
-                props: {
-                    done: () => element.$destroy(),
-                    emoji: data.fun.emoji[Math.floor(Math.random() * data.fun.emoji.length)],
-                },
-                target: document.querySelector("#gimmick")
-            });
-
-        }
 
         if (!noMotion.matches) {
             noMotion.addEventListener('change', () => {
@@ -66,6 +66,7 @@
                    color={link.color ?? false}/>
         {/each}
     </section>
+    <div class="mask" on:click={triggerEmote}></div>
 </div>
 
 <style lang="scss">
@@ -96,6 +97,16 @@
     position: absolute;
     overflow: visible;
 
+    .mask {
+      width: 250pt;
+      height: 250pt;
+      position: absolute;
+      top: -125pt;
+      left: -125pt;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
     .neptune {
       background: url("/neptune.png") transparent no-repeat center center;
       background-size: 250pt;
@@ -110,10 +121,10 @@
       font-size: 24pt;
       position: absolute;
       width: 450pt;
-      height: 300pt;
       top: -100pt;
       left: 100%;
-      margin-left: 15pt;
+      margin: 10pt 15pt;
+      background: var(--bg);
 
       header {
         font-size: 1.33em;
@@ -196,6 +207,7 @@
         text-align: center;
         height: auto;
         width: auto;
+        background: unset;
 
         footer {
           font-size: 0.4em;

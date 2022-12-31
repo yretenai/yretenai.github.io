@@ -2,8 +2,10 @@
     export let href: string;
     export let name: string;
     export let display: string;
-    export let distance: number = 400;
-    export let color: boolean = false;
+    export let distance = 400;
+    export let color = false;
+
+    const offset = 15;
 </script>
 
 <div class="link-element">
@@ -17,16 +19,22 @@
             {display}
         </a>
     </div>
-    <div class="orbit" style:animation-duration="{distance/100*25}s" style:width="{distance + 5}pt" style:height="{distance + 5}pt" style:left="-{distance/2}pt" style:top="-{distance/2}pt">
-        <a class="dot" {href} target="_blank" rel="noreferrer" style:animation-duration="{distance/100*25}s"
-           data-tooltip={display}>
-            {#if color}
-                <img src="/out/{name}.svg" alt={display}/>
-            {:else}
-                <div style:background-color="var(--{name}, var(--fg))" style:--webkit-mask="url('/out/{name}.svg') no-repeat center" style:mask="url('/out/{name}.svg') no-repeat center"></div>
-            {/if}
-        </a>
-    </div>
+    <a {href} target="_blank" rel="noreferrer">
+        <div class="orbit" style:animation-duration="{distance/100*25}s" style:width="{distance + offset}pt" style:height="{distance + offset}pt" style:left="-{(distance + offset)/2}pt" style:top="-{(distance + offset)/2}pt">
+            <svg class="border" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" preserveAspectRatio="none">
+                <circle cx="100" cy="100" r="95" stroke="currentColor" stroke-dasharray="4 8" fill="none"/>
+                <circle cx="100" cy="100" r="100" fill="transparent"/>
+            </svg>
+            <div class="dot" style:animation-duration="{distance/100*25}s"
+               data-tooltip={display}>
+                {#if color}
+                    <img src="/out/{name}.svg" alt={display}/>
+                {:else}
+                    <div style:background-color="var(--{name}, var(--fg))" style:--webkit-mask="url('/out/{name}.svg') no-repeat center" style:mask="url('/out/{name}.svg') no-repeat center"></div>
+                {/if}
+            </div>
+        </div>
+    </a>
 </div>
 
 <style lang="scss">
@@ -54,15 +62,17 @@
     position: absolute;
     pointer-events: none;
 
-    &::after {
-      content: '';
+    .border {
       width: 100%;
       height: 100%;
-      border: 1pt dashed var(--fg);
+      color: var(--fg);
       display: block;
       border-radius: 50%;
       z-index: -1;
       position: absolute;
+      pointer-events: stroke;
+      opacity: 0.5;
+      mask-mode: luminance;
     }
 
     .dot {
@@ -76,7 +86,7 @@
       border-radius: 50%;
       position: absolute;
       top: 50%;
-      margin-left: -16pt;
+      margin-left: -9pt;
       margin-top: -16pt;
       z-index: 100;
 
@@ -92,18 +102,16 @@
         border: 1pt dashed var(--fg);
         z-index: 100;
       }
+    }
 
-      &:hover::before {
-        display: block;
-      }
+    &:hover .dot::before {
+      display: block;
     }
   }
 
   .dot div, .normal div {
     width: 25pt;
     height: 25pt;
-    -webkit-mask: url('') no-repeat center 25pt;
-    mask: url('') no-repeat center 25pt;
   }
 
   .normal {

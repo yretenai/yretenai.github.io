@@ -18,23 +18,10 @@
   ],
   "links": [
     {
-      "id": "fediverse",
-      "name": "Fediverse",
-      "href": "https://a.chronovore.dev/@naomi",
-      "distance": 300,
-      "color": true
-    },
-    {
-      "id": "lavaforge",
-      "name": "Lavaforge",
-      "href": "https://lavaforge.org/legiayayana",
-      "distance": 350
-    },
-    {
-      "id": "github",
-      "name": "GitHub",
-      "href": "https://github.com/yretenai",
-      "distance": 400
+      "id": "pronoun",
+      "name": "Pronouns",
+      "href": "https://en.pronouns.page/@legiayayana",
+      "distance": 500
     },
     {
       "id": "blog",
@@ -43,10 +30,23 @@
       "distance": 450
     },
     {
-      "id": "pronoun",
-      "name": "Pronouns",
-      "href": "https://en.pronouns.page/@legiayayana",
-      "distance": 500
+      "id": "github",
+      "name": "GitHub",
+      "href": "https://github.com/yretenai",
+      "distance": 400
+    },
+    {
+      "id": "lavaforge",
+      "name": "Lavaforge",
+      "href": "https://lavaforge.org/legiayayana",
+      "distance": 350
+    },
+    {
+      "id": "fediverse",
+      "name": "Fediverse",
+      "href": "https://a.chronovore.dev/@naomi",
+      "distance": 300,
+      "color": true
     }
   ],
   "fun": {
