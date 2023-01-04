@@ -42,31 +42,33 @@
 <svelte:window></svelte:window>
 
 <div id="gimmick"></div>
-<div class="content">
-    <div aria-hidden="true" class="neptune"></div>
-    <article class="info">
-        <header>
-            <span>{data.name}</span>
-            {#each data.flair as emoji}
-                <Emote {emoji}/>
+<div class="lock">
+    <div class="content">
+        <div aria-hidden="true" class="neptune"></div>
+        <article class="info">
+            <header>
+                <span>{data.name}</span>
+                {#each data.flair as emoji}
+                    <Emote {emoji}/>
+                {/each}
+            </header>
+            <section>
+                {data.description}
+            </section>
+            <footer>
+                {#each data.attribution as attribution}
+                    <a href={attribution.href} target="_blank" rel="noreferrer">{attribution.subject}</a><br/>
+                {/each}
+            </footer>
+        </article>
+        <section class="links">
+            {#each data.links as link}
+                <Orbit href={link.href} name={link.id} display={link.name} distance={link.distance}
+                       color={link.color ?? false}/>
             {/each}
-        </header>
-        <section>
-            {data.description}
         </section>
-        <footer>
-            {#each data.attribution as attribution}
-                <a href={attribution.href} target="_blank" rel="noreferrer">{attribution.subject}</a><br/>
-            {/each}
-        </footer>
-    </article>
-    <section class="links">
-        {#each data.links as link}
-            <Orbit href={link.href} name={link.id} display={link.name} distance={link.distance}
-                   color={link.color ?? false}/>
-        {/each}
-    </section>
-    <div class="mask" on:click={triggerEmote}></div>
+        <div class="mask" on:click={triggerEmote}></div>
+    </div>
 </div>
 
 <style lang="scss">
@@ -173,6 +175,17 @@
     :root {
       --bg: #EFF1F5;
       --fg: #11111B;
+    }
+  }
+    
+  @media (min-width: 1000pt) {  
+    .lock {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      overflow: hidden;
     }
   }
 
