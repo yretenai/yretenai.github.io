@@ -100,11 +100,6 @@
     }
   }
 
-  .dot div {
-    width: 25pt;
-    height: 25pt;
-  }
-
   .normal {
     display: none;
     margin: 10pt 0;
