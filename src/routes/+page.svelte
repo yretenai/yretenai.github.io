@@ -5,13 +5,17 @@
     import FloatingEmote from "../components/FloatingEmote.svelte";
     import * as svelte from "svelte";
 
+    function triggerEmoteKb() {
+      triggerEmote();
+    }
+
     function triggerEmote() {
         const element: FloatingEmote = new FloatingEmote({
             props: {
                 done: () => element.$destroy(),
                 emoji: data.fun.emoji[Math.floor(Math.random() * data.fun.emoji.length)],
             },
-            target: document.querySelector("#gimmick")
+            target: document.querySelector("#gimmick") as Element
         });
 
     }
@@ -51,33 +55,41 @@
                 {#each data.flair as emoji}
                     <Emote {emoji}/>
                 {/each}
+                <br/>
             </header>
             <section>
                 {data.description}
+                <br/>
             </section>
             <footer>
                 {#each data.attribution as attribution}
-                    <a href={attribution.href} target="_blank" rel="noreferrer">{attribution.subject}</a><br/>
+                  <span>
+                    {#each attribution.subject as part}
+                      {#if "link" in part}
+                      <a href={attribution.href} target="_blank" rel="noreferrer">{part.link}</a>
+                      {/if}
+                      {#if "text" in part}
+                      <span>{part.text}</span>
+                      {/if}
+                    {/each}
+                  </span>
+                  <br/>
                 {/each}
             </footer>
         </article>
         <section class="links">
             {#each data.links as link}
-                <Orbit href={link.href} name={link.id} display={link.name} distance={link.distance}
-                       color={link.color ?? false}/>
+                <Orbit href={link.href} name={link.id} display={link.name} distance={link.distance}/>
             {/each}
         </section>
-        <div class="mask" on:click={triggerEmote}></div>
+        <div class="mask" on:click={triggerEmote} on:keypress={triggerEmoteKb}></div>
     </div>
 </div>
 
 <style lang="scss">
   :root {
     --bg: #11111B;
-    --fg: #EFF1F5;
-    --lavaforge: #ff8066;
-    --pronoun: #ff95bb;
-    --blog: #f9e2af;
+    --fg: #EFF1F5;;
   }
 
   #gimmick {

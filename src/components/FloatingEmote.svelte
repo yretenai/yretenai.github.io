@@ -2,8 +2,8 @@
     import type {EventHandler} from "svelte/elements";
     import Emote from "./Emote.svelte";
 
-    export let done : EventHandler;
-    export let emoji: string;
+    export let done : Function;
+    export let emoji: string[];
 
     function deleteSelf(event: AnimationEvent) {
         if (event.animationName.endsWith("move")) {

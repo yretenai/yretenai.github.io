@@ -1,9 +1,9 @@
 <script lang="ts">
-    export let emoji: string;
+    export let emoji: string[];
     export let size: number = 1;
 </script>
 
-<img class="emote" src="/emote/{emoji}.png" alt={emoji} style:width="{size}em" style:height="{size}em"/>
+<img class="emote" src="/emote/{emoji[0]}.png" alt={emoji[1]} style:width="{size}em" style:height="{size}em"/>
 
 <style lang="scss">
     .emote {

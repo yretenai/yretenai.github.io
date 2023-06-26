@@ -1,15 +1,28 @@
 {
   "name": "Ada",
-  "flair": ["lesbianlilly", "translilly"],
+  "flair": [["translilly", "transgender lilly emoji"], ["lesbianlilly", "lesbian lilly emoji"]],
   "description": "Just a transgender lesbian who likes to reverse engineer games.",
   "attribution": [
     {
-      "subject": "Neptune image is made by Judy Schmidt",
+      "subject": [
+        { "text": "Neptune image is made by " },
+        { "link": "Judy Schmidt" }
+      ],
       "href": "https://www.flickr.com/photos/geckzilla/39103611231"
     },
     {
-      "subject": "lilly emotes are made by Maddie aka @maddievision@akiba.party",
+      "subject": [
+        { "text": "lilly emoji are made by " },
+        { "link": "Maddie aka @maddievision@akiba.party" }
+      ],
       "href": "https://akiba.party/@maddievision"
+    },
+    {
+      "subject": [
+        { "text": "licensed under " },
+        { "link": "0BSD" }
+      ],
+      "href": "https://github.com/yretenai/yretenai.github.io/blob/develop/LICENSE"
     }
   ],
   "links": [
@@ -41,19 +54,18 @@
       "id": "fediverse",
       "name": "Fediverse",
       "href": "https://tech.lgbt/@chronovore",
-      "distance": 300,
-      "color": true
+      "distance": 300
     }
   ],
   "fun": {
     "interval": 1000,
     "rate": 0.33,
     "emoji": [
-      "nixos",
-      "windows",
-      "nobara",
-      "lesbianlilly",
-      "translilly"
+      ["nixos", "NixOS"],
+      ["windows", "Windows 11"],
+      ["nobara", "Nobara"],
+      ["lesbianlilly", "Lesbian Lilly"],
+      ["translilly", "Trangeder Lilly"]
     ]
   }
 }

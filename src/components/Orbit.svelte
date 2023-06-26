@@ -3,7 +3,6 @@
     export let name: string;
     export let display: string;
     export let distance = 400;
-    export let color = false;
 
     const offset = 15;
 </script>
@@ -11,11 +10,7 @@
 <div class="link-element">
     <div class="normal">
         <a {href} target="_blank" rel="noreferrer">
-            {#if color}
-                <img src="/out/{name}.svg" alt={display}/>
-            {:else}
-                <div style:background-color="var(--{name}, var(--fg))" style:--webkit-mask="url('/out/{name}.svg') no-repeat center" style:mask="url('/out/{name}.svg') no-repeat center"></div>
-            {/if}
+            <img src="/out/{name}.svg" alt=""/>
             {display}
         </a>
     </div>
@@ -27,11 +22,7 @@
             </svg>
             <div class="dot" style:animation-duration="{distance/100*25}s"
                data-tooltip={display}>
-                {#if color}
-                    <img src="/out/{name}.svg" alt={display}/>
-                {:else}
-                    <div style:background-color="var(--{name}, var(--fg))" style:--webkit-mask="url('/out/{name}.svg') no-repeat center" style:mask="url('/out/{name}.svg') no-repeat center"></div>
-                {/if}
+                <img src="/out/{name}.svg" alt=""/>
             </div>
         </div>
     </a>
@@ -109,7 +100,7 @@
     }
   }
 
-  .dot div, .normal div {
+  .dot div {
     width: 25pt;
     height: 25pt;
   }
@@ -118,11 +109,7 @@
     display: none;
     margin: 10pt 0;
 
-    div {
-      display: inline-block;
-    }
-
-    div, img {
+    img {
       vertical-align: middle;
       margin-right: 5pt;
     }
