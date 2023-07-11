@@ -174,7 +174,7 @@
     width: 100%;
     height: 100%;
     background: var(--bg);
-    font-family: 'Clarity City', 'Metropolis', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'JetBrains Mono', monospace;
     color: var(--fg);
   }
 
