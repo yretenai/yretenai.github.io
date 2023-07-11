@@ -134,7 +134,7 @@
     .info {
       font-size: 24pt;
       position: absolute;
-      width: 450pt;
+      width: 550pt;
       top: -100pt;
       left: 100%;
       margin: 10pt 15pt;
