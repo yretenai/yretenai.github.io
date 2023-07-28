@@ -62,8 +62,9 @@
     "rate": 0.33,
     "emoji": [
       ["nixos", "NixOS"],
-      ["windows", "Windows 11"],
+      ["windows", "Windows Vista"],
       ["nobara", "Nobara"],
+      ["gentoo", "Gentoo"],
       ["lesbianlilly", "Lesbian Lilly"],
       ["translilly", "Trangeder Lilly"]
     ]
