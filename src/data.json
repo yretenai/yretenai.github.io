@@ -45,16 +45,10 @@
       "distance": 400
     },
     {
-      "id": "lavaforge",
-      "name": "Lavaforge",
-      "href": "https://lavaforge.org/legiayayana",
+      "id": "srht",
+      "name": "sourcehut",
+      "href": "https://sr.ht/~chronovore",
       "distance": 350
-    },
-    {
-      "id": "fediverse",
-      "name": "Fediverse",
-      "href": "https://tech.lgbt/@chronovore",
-      "distance": 300
     }
   ],
   "fun": {
@@ -62,8 +56,9 @@
     "rate": 0.33,
     "emoji": [
       ["nixos", "NixOS"],
-      ["windows", "Windows 11"],
+      ["windows", "Windows Vista"],
       ["nobara", "Nobara"],
+      ["gentoo", "Gentoo"],
       ["lesbianlilly", "Lesbian Lilly"],
       ["translilly", "Trangeder Lilly"]
     ]
