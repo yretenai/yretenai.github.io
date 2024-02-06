@@ -10,7 +10,7 @@
 <div class="link-element">
     <div class="normal">
         <a {href} target="_blank" rel="noreferrer">
-            <img src="/out/{name}.svg" alt=""/>
+            <img src="/out/{name}.svg" alt=""/><br/>
             {display}
         </a>
     </div>
@@ -93,6 +93,11 @@
         border: 1pt dashed var(--fg);
         z-index: 100;
       }
+
+      img {
+        width: 25pt;
+        height: 25pt;
+      }
     }
 
     &:hover .dot::before {
@@ -107,6 +112,8 @@
     img {
       vertical-align: middle;
       margin-right: 5pt;
+      width: 25pt;
+      height: 25pt;
     }
   }
 
