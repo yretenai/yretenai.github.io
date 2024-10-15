@@ -1,7 +1,7 @@
 {
   "name": "Ada",
   "flair": [["translilly", "transgender lilly emoji"], ["lesbianlilly", "lesbian lilly emoji"]],
-  "description": "Just a transgender lesbian who likes to reverse engineer games.",
+  "description": "Just a transbian who likes to reverse engineer games.",
   "attribution": [
     {
       "subject": [
@@ -13,9 +13,9 @@
     {
       "subject": [
         { "text": "lilly emoji are made by " },
-        { "link": "Maddie aka @maddievision@akiba.party" }
+        { "link": "@maddie@maddie.rocks" }
       ],
-      "href": "https://akiba.party/@maddievision"
+      "href": "https://maddie.rocks/@maddie"
     },
     {
       "subject": [
@@ -26,12 +26,6 @@
     }
   ],
   "links": [
-    {
-      "id": "pronoun",
-      "name": "Pronouns",
-      "href": "https://en.pronouns.page/@legiayayana",
-      "distance": 500
-    },
     {
       "id": "blog",
       "name": "Blog",
@@ -49,6 +43,20 @@
       "name": "sourcehut",
       "href": "https://sr.ht/~chronovore",
       "distance": 350
+    }
+  ],
+  "button": [
+    {
+      "href": "/button.html",
+      "title": "legiayayana's orbit",
+      "id": "chronovore",
+      "alt": "button that says 'chronovore', text is overlayed a photograph of neptune, which in this image is a blue gas giant"
+    },
+    {
+      "href": "https://lesbnyan.top/",
+      "title": "lesbnyan",
+      "id": "lesbnyan",
+      "alt": "button that says 'nya' with two tildes, superimposed on the lesbian flag colors"
     }
   ],
   "fun": {

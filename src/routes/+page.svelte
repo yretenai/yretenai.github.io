@@ -2,6 +2,7 @@
     import * as data from "../data.json";
     import Emote from "../components/Emote.svelte";
     import Orbit from "../components/Orbit.svelte";
+    import Button from "../components/Button.svelte";
     import FloatingEmote from "../components/FloatingEmote.svelte";
     import * as svelte from "svelte";
 
@@ -61,6 +62,11 @@
                 {data.description}
                 <br/>
             </section>
+            <aside>
+                {#each data.button as button}
+                    <Button {button}/>
+                {/each}
+            </aside>
             <footer>
                 {#each data.attribution as attribution}
                   <span>
