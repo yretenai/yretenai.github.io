@@ -52,7 +52,8 @@
         <div aria-hidden="true" class="neptune"></div>
         <article class="info">
             <header>
-                <span>{data.name}</span>{#each data.flair as emoji}
+                <span>{data.name}</span>
+                {#each data.flair as emoji}
                     <Emote {emoji}/>
                 {/each}
                 <br/>
