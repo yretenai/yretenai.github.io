@@ -10,5 +10,6 @@
 .button-href {
 	margin: 2pt;
 	display: inline-block;
+	image-rendering: pixelated;
 }
 </style>
