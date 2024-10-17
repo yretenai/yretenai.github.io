@@ -52,8 +52,7 @@
         <div aria-hidden="true" class="neptune"></div>
         <article class="info">
             <header>
-                <span>{data.name}</span>
-                {#each data.flair as emoji}
+                <span>{data.name}</span>{#each data.flair as emoji}
                     <Emote {emoji}/>
                 {/each}
                 <br/>
@@ -187,7 +186,7 @@
     width: 100%;
     height: 100%;
     background: var(--bg);
-    font-family: 'JetBrains Mono', monospace;
+    font-family: sans-serif;
     color: var(--fg);
   }
 

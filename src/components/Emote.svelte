@@ -8,6 +8,6 @@
 <style lang="scss">
     .emote {
       vertical-align: top;
-      margin: 0 5pt;
+      margin: 7px 5pt;
     }
 </style>
