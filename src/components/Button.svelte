@@ -9,5 +9,6 @@
 <style>
 .button-href {
 	margin: 2pt;
+	display: inline-block;
 }
 </style>

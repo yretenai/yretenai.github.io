@@ -62,11 +62,6 @@
                 {data.description}
                 <br/>
             </section>
-            <aside>
-                {#each data.button as button}
-                    <Button {button}/>
-                {/each}
-            </aside>
             <footer>
                 {#each data.attribution as attribution}
                   <span>
@@ -81,6 +76,12 @@
                   </span>
                   <br/>
                 {/each}
+                <aside>
+                    <small>some cool sites you should check out</small>
+                    {#each data.button as button}
+                        <Button {button}/>
+                    {/each}
+                </aside>
             </footer>
         </article>
         <section class="links">
@@ -96,6 +97,12 @@
   :root {
     --bg: #11111B;
     --fg: #EFF1F5;;
+  }
+
+  aside small {
+    display: block;
+    clear: both;
+    margin-top: 15pt;
   }
 
   #gimmick {
