@@ -151,7 +151,6 @@
       top: -100pt;
       left: 100%;
       margin: 10pt 15pt;
-      background: var(--bg);
 
       header {
         font-size: 1.33em;
