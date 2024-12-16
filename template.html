@@ -1,0 +1,96 @@
+{% macro npt_emote(name, alt, size=1) -%}
+<img class="emote" src="/emote/{{name}}.png" alt="{{alt}}" style="width: {{size}}em; height: {{size}}em"/>
+{%- endmacro %}
+
+{% macro npt_button(id, href, title, ext="png") -%}
+<a class="button-href" href="{{href}}" target="_blank" rel="noopener noreferrer" title="{{title}}">
+	<img src="/button/{{id}}.{{ext}}" alt="{{alt}}" width="88px" height="31px">
+</a>
+{%- endmacro %}
+
+{% macro npt_orbit(name, href, display, distance, offset = 15) -%}
+<div class="link-element">
+    <a href="{{href}}" target="_blank" rel="noreferrer">
+        <div class="orbit" style="animation-duration: {{distance/100*25}}s; width: {{distance + offset}}pt; height: {{distance + offset}}pt; left: -{{(distance + offset)/2}}pt; top: -{{(distance + offset)/2}}pt">
+            <svg class="border" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" preserveAspectRatio="none">
+                <circle cx="100" cy="100" r="95" stroke="currentColor" stroke-width="0.3" stroke-dasharray="2 4.5" fill="none"/>
+                <circle cx="100" cy="100" r="100" fill="transparent"/>
+            </svg>
+            <div class="dot" style="animation-duration: {{distance/100*25}}s" data-tooltip="{{display}}">
+                <img src="/out/{{name}}.svg" alt=""/>
+            </div>
+			<span class="label">{{display|tojson}}</span>
+        </div>
+    </a>
+</div>
+{%- endmacro %}
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<title>legiayayana's orbit</title>
+		<script>
+window.NEPTUNE = {{ data }};
+		</script>
+		<script src="/space.js"></script>
+		<link rel="stylesheet" href="/design.css"/>
+	</head>
+	<body>
+		<div style="display: contents">
+			<div id="gimmick"></div>
+			<div class="lock">
+				<div class="content">
+					<div aria-label="image of neptune" id="neptune"></div>
+					<article class="info">
+						<header>
+							<span>{{ data.name }}</span>
+							{% for emote in data.flair %}
+								{{ npt_emote(emote[0], emote[1]) }}
+							{% endfor %}
+							<br/>
+						</header>
+						<section>
+							{{ data.description }}
+							<br/>
+						</section>
+						<footer>
+							{% for attribution in data.attribution %}
+							<span>
+								{% for part in attribution.subject %}
+								{% if "link" in part %}
+								<a href="{{attribution.href}}" target="_blank" rel="noreferrer">{{part.link}}</a>
+								{% endif %}
+								{% if "text" in part %}
+								<span>{{part.text}}</span>
+								{% endif %}
+								{% endfor %}
+							</span>
+							<br/>
+							{% endfor %}
+							<aside>
+								<small>some cool sites you should check out</small>
+								{% for button in data.button %}
+									{{ npt_button(button.id, button.href, button.title, button.ext or "png") }}
+								{% endfor %}
+							</aside>
+						</footer>
+					</article>
+					<section class="links">
+						{% for link in data.links %}
+							{{ npt_orbit(link.id, link.href, link.name, link.distance) }}
+						{% endfor %}
+					</section>
+					<div id="mask"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<!--
+		eep!!
+			made by @ada@zoner.work
+				with love and support from my girlfriend @cute_stuff@mk.absturztau.be
+					-->
+</html>

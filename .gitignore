@@ -1,0 +1,8 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+venv
+
+# ignore intellij stuff
+/.idea

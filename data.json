@@ -1,0 +1,98 @@
+{
+  "name": "legiayayana",
+  "flair": [["translilly", "transgender lilly emoji"], ["lesbianlilly", "lesbian lilly emoji"]],
+  "description": "Just a transbian who likes to reverse engineer games.",
+  "attribution": [
+    {
+      "subject": [
+        { "text": "Neptune image is made by " },
+        { "link": "Judy Schmidt" }
+      ],
+      "href": "https://www.flickr.com/photos/geckzilla/39103611231"
+    },
+    {
+      "subject": [
+        { "text": "lilly emoji are made by " },
+        { "link": "@maddie@maddie.rocks" }
+      ],
+      "href": "https://maddie.rocks/@maddie"
+    },
+    {
+      "subject": [
+        { "text": "licensed under " },
+        { "link": "0BSD" }
+      ],
+      "href": "https://github.com/yretenai/yretenai.github.io/blob/develop/LICENSE"
+    }
+  ],
+  "links": [
+    {
+      "id": "blog",
+      "name": "Blog",
+      "href": "https://chronovore.dev/posts/",
+      "distance": 450
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "href": "https://github.com/yretenai",
+      "distance": 400
+    },
+    {
+      "id": "srht",
+      "name": "sourcehut",
+      "href": "https://sr.ht/~chronovore",
+      "distance": 350
+    }
+  ],
+  "button": [
+    {
+      "href": "/button.html",
+      "title": "legiayayana's orbit",
+      "id": "chronovore",
+      "alt": "button that says 'ada', text is overlayed a photograph of neptune, which in this image is a blue gas giant"
+    },
+    {
+      "href": "https://lesbnyan.top/",
+      "title": "lesbnyan",
+      "id": "lesbnyan",
+      "alt": "button that says 'nya' with two tildes, superimposed on the lesbian flag colors"
+    },
+    {
+      "href": "https://xenia.blahaj.land/",
+      "title": "rose garden",
+      "id": "rose",
+      "alt": "button that says 'rose', a rose grows out of the o, on the left the character milk chan is visible, a very pale girl with shoulder length brown hair wearing a black hoodie"
+    },
+    {
+      "href": "https://pixelde.su/",
+      "title": "pixeldesu",
+      "id": "pixeldesu",
+      "alt": "button that says 'pixel' with a character drawn in pixel art with blue hair and big round glasses, there's a rainbow color effect on the button"
+    },
+    {
+      "href": "https://neil.cyrneko.eu/",
+      "title": "neil",
+      "id": "neilcyrneko",
+      "alt": "button that consists of four asterisks on a white background"
+    },
+    {
+      "href": "https://brainworms.nl/",
+      "ext": "gif",
+      "title": "brainworms",
+      "id": "brainworms",
+      "alt": "button that shakes with the text brain worms, the word \"worms\" is worm colored"
+    }
+  ],
+  "fun": {
+    "interval": 1000,
+    "rate": 0.33,
+    "emoji": [
+      ["windows", "Windows Vista"],
+      ["gentoo", "Gentoo"],
+      ["lesbianlilly", "Lesbian Lilly"],
+      ["translilly", "Transgender Lilly"],
+      ["lesbian", "Lesbian Debian"]
+    ]
+  }
+}
