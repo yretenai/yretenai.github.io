@@ -17,7 +17,8 @@ with open('template.html', 'r') as template_source:
 env = Environment(
 	loader=DictLoader({'index.html': template}),
 	trim_blocks=True,
-	lstrip_blocks=True	
+	lstrip_blocks=True,
+	autoescape=select_autoescape()
 )
 
 index_template = env.get_template("index.html")
