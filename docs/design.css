@@ -55,6 +55,10 @@ aside small {
     .content .info footer {
       font-size: 0.6em;
       font-weight: lighter; }
+    .content .info .buttons ul {
+      list-style: none; }
+      .content .info .buttons ul li {
+        display: inline; }
 
 a {
   color: var(--fg);
@@ -81,6 +85,11 @@ body,
   :root {
     --bg: #EFF1F5;
     --fg: #11111B; } }
+
+@media print {
+  .content .info footer {
+    font-weight: normal;
+    font-size: 0.5em !important; } }
 
 @media (min-width: 1000pt) {
   .lock {

@@ -1,7 +1,6 @@
 :root {
 	--bg: #11111B;
 	--fg: #EFF1F5;
-	;
 }
 
 aside small {
@@ -70,6 +69,14 @@ aside small {
 			font-size: 0.6em;
 			font-weight: lighter;
 		}
+
+		.buttons ul {
+			list-style: none;
+
+			li {
+				display: inline;
+			}
+		}
 	}
 }
 
@@ -106,6 +113,13 @@ print {
 	:root {
 		--bg: #EFF1F5;
 		--fg: #11111B;
+	}
+}
+
+@media print {
+	.content .info footer {
+		font-weight: normal;
+		font-size: 0.5em !important;
 	}
 }
 
@@ -292,6 +306,7 @@ print {
 
 @media (prefers-reduced-motion),
 print {
+
 	.orbit,
 	.dot {
 		animation: none !important;
