@@ -1,7 +1,7 @@
 {
-  "name": "legiayayana",
+  "name": "Np-93/237",
   "flair": [["translilly", "transgender lilly emoji"], ["lesbianlilly", "lesbian lilly emoji"]],
-  "description": "Just a transbian who likes to reverse engineer games.",
+  "description": "Just a transbian drone who likes to tinker on games.",
   "attribution": [
     {
       "subject": [
@@ -53,16 +53,22 @@
       "alt": "button that says 'ada', text is overlayed a photograph of neptune, which in this image is a blue gas giant"
     },
     {
-      "href": "https://xenia.blahaj.land/",
-      "title": "rose garden",
-      "id": "rose",
-      "alt": "button that says 'rose', a rose grows out of the o, on the left the character milk chan is visible, a very pale girl with shoulder length brown hair wearing a black hoodie"
+      "href": "https://lizzy.rs/",
+      "title": "lizzy",
+      "id": "lizzy",
+      "alt": "button that has the name \"lizzy\", along with a logo that is a yellow star on a blue circle, a lily, a rose, an orange butterfly, a lizard, a hammer and sickle, cat ears, a grass block cube as found in voxel games, the wine logo and the proton logo. the background is the bisexual flag"
     },
     {
       "href": "https://pixelde.su/",
       "title": "pixeldesu",
       "id": "pixeldesu",
       "alt": "button that says 'pixel' with a character drawn in pixel art with blue hair and big round glasses, there's a rainbow color effect on the button"
+    },
+    {
+      "href": "https://xenia.blahaj.land/",
+      "title": "rose garden",
+      "id": "rose",
+      "alt": "button that says 'rose', a rose grows out of the o, on the left the character milk chan is visible, a very pale girl with shoulder length brown hair wearing a black hoodie"
     },
     {
       "href": "https://neil.cyrneko.eu/",
@@ -85,8 +91,7 @@
       ["windows", "Windows Vista"],
       ["gentoo", "Gentoo"],
       ["lesbianlilly", "Lesbian Lilly"],
-      ["translilly", "Transgender Lilly"],
-      ["lesbian", "Lesbian Debian"]
+      ["translilly", "Transgender Lilly"]
     ]
   }
 }
