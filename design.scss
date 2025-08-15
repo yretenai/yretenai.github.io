@@ -1,352 +1,196 @@
 :root {
-	--bg: #11111B;
-	--fg: #EFF1F5;
+	--color-primary-green: #E9EC6B;
+	--color-primary-blue: #6BE9EC;
+	--color-primary-pink: #EC6BE9;
+	--color-green: #0D0E02;
+	--color-blue: #020D0E;
+	--color-pink: #0E020D;
+	--color-inv-green: #FBFCE4;
+	--color-inv-blue: #E4FBFC;
+	--color-inv-pink: #FCE4FB;
 }
 
-aside small {
-	display: block;
-	clear: both;
-	margin-top: 15pt;
-}
-
-#gimmick {
-	overflow: hidden;
-	pointer-events: none;
-	z-index: -100;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	white-space: nowrap;
-}
-
-.content {
-	top: 50vh;
-	left: 50vw;
-	margin-left: -300pt;
-	position: absolute;
-	overflow: visible;
-
-	#mask {
-		width: 250pt;
-		height: 250pt;
-		position: absolute;
-		top: -125pt;
-		left: -125pt;
-		border-radius: 50%;
-		cursor: pointer;
-	}
-
-	#neptune {
-		background: url("/neptune.png") transparent no-repeat center center;
-		background-size: 250pt;
-		width: 512pt;
-		height: 512pt;
-		margin-left: -256pt;
-		margin-top: -256pt;
-		pointer-events: none;
-	}
-
-	.info {
-		font-size: 24pt;
-		position: absolute;
-		width: 550pt;
-		top: -100pt;
-		left: 100%;
-		margin: 10pt 15pt;
-
-		header {
-			font-size: 1.33em;
-			font-weight: bold;
-		}
-
-		article {
-			font-style: italic;
-		}
-
-		footer {
-			font-size: 0.6em;
-			font-weight: lighter;
-		}
-
-		.buttons ul {
-			list-style: none;
-
-			li {
-				display: inline;
-			}
-		}
-	}
-}
-
-a {
-	color: var(--fg);
-	text-decoration: none;
-	font-style: italic;
-
-	&:hover {
-		text-decoration: underline;
-	}
-
-	&:visited {
-		color: var(--fg);
-	}
-}
-
-html {
-	width: 100%;
-	height: 100%;
-	background: var(--bg);
-	font-family: sans-serif;
-	color: var(--fg);
-}
-
-body,
 * {
 	margin: 0;
 	padding: 0;
 }
 
+html, body {
+	font-size: 20pt;
+	font-family: sans-serif;
+	background: var(--color-blue);
+	color: var(--color-inv-blue);
+}
+
+main {
+	max-width: 888pt;
+	margin: 0 auto;
+	position: relative;
+	min-height: 100vh;
+	overflow-y: hidden;
+	z-index: 1;
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: -128pt;
+		left: 0;
+		right: 0;
+		min-height: 512pt;
+		opacity: 0.33;
+		z-index: -1;
+		background: url(/neptune.png) no-repeat;
+		background-position: center;
+		background-size: 512pt;
+		pointer-events: none;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 4em;
+}
+
+h2 {
+	font-size: 3.5em;
+}
+
+h3 {
+	font-size: 3em;
+}
+
+h4 {
+	font-size: 2.5em;
+}
+
+h5 {
+	font-size: 2em;
+}
+
+h6 {
+	font-size: 1.5em;
+}
+
+code, pre {
+	font-family: monospace;
+}
+
+header {
+	color: var(--color-primary-green);
+	font-weight: bold;
+	font-size: 1.5em;
+	margin: 0 128pt;
+	margin-top: 256pt;
+}
+
+figure {
+	color: var(--color-primary-pink);
+	font-weight: 200;
+	font-size: 0.8em;
+}
+
+article {
+	margin: 15pt;
+}
+
+footer {
+	color: var(--color-primary-blue);
+}
+
+a {
+	color: var(--color-primary-green);
+	&:hover {
+		color: var(--color-primary-pink);
+	}
+
+	img {
+		vertical-align: text-bottom;
+	}
+}
+
+small {
+	font-size: 0.8em;
+}
+
+ul.buttons  {
+	list-style: none;
+	li {
+		display: inline;
+	}
+
+	a {
+		text-decoration: none;
+		margin: 0;
+		font-size: 0;
+		img {
+			font-size: 20pt;
+		}
+	}
+}
+
+footer {
+	margin: 0 128pt;
+	font-size: 0.75em;
+}
+
+section {
+	margin: 16pt 128pt;
+	a {
+		display: block;
+		margin: 5pt 0;
+	}
+
+	img {
+		width: 24pt;
+	}
+}
+
 @media (prefers-color-scheme: light),
 print {
 	:root {
-		--bg: #EFF1F5;
-		--fg: #11111B;
+		--color-primary-green: #c3c559;
+		--color-primary-blue: #59c3c5;
+		--color-primary-pink: #c559c3;
+		--color-green: #FBFCE4;
+		--color-blue: #E4FBFC;
+		--color-pink: #FCE4FB;
+		--color-inv-green: #0D0E02;
+		--color-inv-blue: #020D0E;
+		--color-inv-pink: #0E020D;
 	}
 }
 
 @media print {
-	.content .info footer {
-		font-weight: normal;
-		font-size: 0.5em !important;
-	}
-}
-
-@media (min-width: 1000pt) {
-	.lock {
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		overflow: hidden;
-	}
-}
-
-@media (max-width: 1000pt),
-print {
-	.content {
-		position: unset;
-		overflow: unset;
-		margin: 0;
-		text-align: center;
-
-		#neptune {
-			position: absolute;
-			margin: unset;
-			top: 0;
-			left: 10%;
-			right: 10%;
-			bottom: 0;
-			background-position: center -100pt;
-			background-size: contain;
-			width: unset;
-			height: unset;
-			opacity: 0.33;
-			z-index: -1;
-		}
-
-		.info {
-			position: unset;
-			margin: unset;
-			padding: 5pt;
-			left: unset;
-			top: unset;
-			text-align: center;
-			height: auto;
-			width: auto;
-			background: unset;
-
-			footer {
-				font-size: 0.4em;
-			}
-		}
-
-		.links {
-			padding: 15pt;
-		}
-	}
-}
-
-@media (max-width: 600pt),
-print {
-	.links {
-		text-align: left;
-	}
-}
-
-.button-href {
-	margin: 2pt;
-	display: inline-block;
-	image-rendering: pixelated;
-}
-
-.emote {
-	vertical-align: top;
-	margin: 7px 5pt;
-}
-
-.floating-emote {
-	position: absolute;
-	animation: 5s sine infinite ease-in-out alternate, 30s move 1 linear;
-}
-
-@keyframes move {
-	from {
-		left: 100vw;
+	:root {
+		--color-primary-green: black;
+		--color-primary-blue: black;
+		--color-primary-pink: black;
+		--color-green: white;
+		--color-blue: white;
+		--color-pink: white;
+		--color-inv-green: black;
+		--color-inv-blue: black;
+		--color-inv-pink: black;
 	}
 
-	to {
-		left: -100%;
-	}
-}
-
-@keyframes sine {
-	from {
-		margin-top: 0;
-	}
-
-	to {
-		margin-top: 10vh;
-	}
-}
-
-@keyframes rotate {
-	from {
-		transform: rotate(0deg);
-	}
-
-	to {
-		transform: rotate(360deg);
-	}
-}
-
-@keyframes counter-rotate {
-	from {
-		transform: rotate(0deg);
-	}
-
-	to {
-		transform: rotate(-360deg);
-	}
-}
-
-.orbit {
-	animation: rotate linear infinite;
-	display: inline-block;
-	position: absolute;
-	pointer-events: none;
-
-	.border {
-		width: 100%;
-		height: 100%;
-		color: var(--fg);
-		display: block;
-		border-radius: 50%;
-		z-index: -1;
-		position: absolute;
-		pointer-events: stroke;
-		opacity: 0.5;
-		mask-mode: luminance;
-	}
-
-	.dot {
-		pointer-events: all;
-		animation: counter-rotate linear infinite;
-		display: block;
-		width: 25pt;
-		height: 25pt;
-		background: var(--bg);
-		border: 5pt var(--bg) solid;
-		border-radius: 50%;
-		position: absolute;
-		top: 50%;
-		margin-left: -9pt;
-		margin-top: -16pt;
-		z-index: 100;
-
-		&::before {
-			content: attr(data-tooltip);
-			position: absolute;
-			top: -29pt;
-			left: 100%;
-			background: var(--bg);
-			display: none;
-			padding: 3pt 10pt;
-			border-radius: 3pt;
-			border: 1pt dashed var(--fg);
-			z-index: 100;
-		}
-
-		img {
-			width: 25pt;
-			height: 25pt;
-		}
-	}
-
-	&:hover .dot::before {
-		display: block;
-	}
-
-	.label {
+	main::after {
 		display: none;
 	}
-}
 
-@media (prefers-reduced-motion),
-print {
-
-	.orbit,
-	.dot {
-		animation: none !important;
+	header {
+		margin-top: 16pt;
 	}
 }
 
-@media (max-width: 1000pt),
-print {
-	.orbit {
-		position: relative;
-		top: initial !important;
-		left: initial !important;
-		width: initial !important;
-		height: initial !important;
-		animation: unset !important;
-		margin: 10pt 0;
-
-		.border {
-			display: none;
-		}
-
-		.dot {
-			vertical-align: middle;
-			margin-right: 5pt;
-			width: 25pt;
-			height: 25pt;
-			animation: unset !important;
-		}
-
-		.label {
-			display: block !important;
-			margin-left: 32pt;
-		}
-
-		&:hover .dot::before {
-			display: none !important;
-		}
+@media (max-width: 900pt) {
+	body {
+		font-size: 16pt;
 	}
 
-	#mask {
-		display: none;
+	header, section, footer {
+		margin: 16pt;
 	}
 }
