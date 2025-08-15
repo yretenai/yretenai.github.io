@@ -150,6 +150,7 @@ section {
 
 @media (prefers-color-scheme: light),
 print {
+	/*
 	:root {
 		--color-primary-green: #c3c559;
 		--color-primary-blue: #59c3c5;
@@ -163,7 +164,7 @@ print {
 	}
 }
 
-@media print {
+@media print { */
 	:root {
 		--color-primary-green: black;
 		--color-primary-blue: black;

@@ -116,18 +116,21 @@ section {
     width: 24pt; }
 
 @media (prefers-color-scheme: light), print {
-  :root {
-    --color-primary-green: #c3c559;
-    --color-primary-blue: #59c3c5;
-    --color-primary-pink: #c559c3;
-    --color-green: #FBFCE4;
-    --color-blue: #E4FBFC;
-    --color-pink: #FCE4FB;
-    --color-inv-green: #0D0E02;
-    --color-inv-blue: #020D0E;
-    --color-inv-pink: #0E020D; } }
+  /*
+	:root {
+		--color-primary-green: #c3c559;
+		--color-primary-blue: #59c3c5;
+		--color-primary-pink: #c559c3;
+		--color-green: #FBFCE4;
+		--color-blue: #E4FBFC;
+		--color-pink: #FCE4FB;
+		--color-inv-green: #0D0E02;
+		--color-inv-blue: #020D0E;
+		--color-inv-pink: #0E020D;
+	}
+}
 
-@media print {
+@media print { */
   :root {
     --color-primary-green: black;
     --color-primary-blue: black;
