@@ -90,6 +90,10 @@ figure {
 	color: var(--color-primary-pink);
 	font-weight: 200;
 	font-size: 0.8em;
+
+	span[title] {
+		text-decoration: dotted underline;
+	}
 }
 
 article {

@@ -55,6 +55,8 @@ aside small {
     .content .info footer {
       font-size: 0.6em;
       font-weight: lighter; }
+    .content .info span[title] {
+      text-decoration: dotted underline; }
     .content .info .buttons ul {
       list-style: none; }
       .content .info .buttons ul li {
@@ -80,6 +82,10 @@ body,
 * {
   margin: 0;
   padding: 0; }
+
+ruby > rt {
+  font-size: 75%;
+  font-weight: lighter; }
 
 @media (prefers-color-scheme: light), print {
   :root {

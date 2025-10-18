@@ -75,6 +75,8 @@ figure {
   color: var(--color-primary-pink);
   font-weight: 200;
   font-size: 0.8em; }
+  figure span[title] {
+    text-decoration: dotted underline; }
 
 article {
   margin: 15pt; }

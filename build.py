@@ -1,7 +1,6 @@
 from json import load as load_json
 from sass import compile as compile_sass
 from jinja2 import Environment, DictLoader, select_autoescape
-from bs4 import BeautifulSoup as soup
 import re
 
 with open("nostalgia.scss", "r") as scss_source:
@@ -29,9 +28,9 @@ env = Environment(
 )
 
 with open("docs/index.html", "w") as html_source:
-	rendered = soup(env.get_template("index.html").render(data=data), 'html.parser').prettify()
+	rendered = env.get_template("index.html").render(data=data)
 	html_source.write(re.sub(r'^(\s+)', lambda m: '\t' * len(m.group(1)), rendered, flags=re.MULTILINE))
 
 with open("docs/nostalgia.html", "w") as html_source:
-	rendered = soup(env.get_template("nostalgia.html").render(data=data), 'html.parser').prettify()
+	rendered = env.get_template("nostalgia.html").render(data=data)
 	html_source.write(re.sub(r'^(\s+)', lambda m: '\t' * len(m.group(1)), rendered, flags=re.MULTILINE))

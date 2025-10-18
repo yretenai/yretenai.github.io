@@ -70,6 +70,10 @@ aside small {
 			font-weight: lighter;
 		}
 
+		span[title] {
+			text-decoration: dotted underline;
+		}
+
 		.buttons ul {
 			list-style: none;
 
@@ -106,6 +110,11 @@ body,
 * {
 	margin: 0;
 	padding: 0;
+}
+
+ruby > rt {
+    font-size: 75%;
+    font-weight: lighter;
 }
 
 @media (prefers-color-scheme: light),

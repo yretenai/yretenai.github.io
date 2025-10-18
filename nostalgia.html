@@ -50,14 +50,20 @@
 				<div aria-label="image of neptune" id="neptune"></div>
 				<article class="info">
 					<header>
-						<span>{{ data.name[0] }}</span>
+						<span><ruby>{{data.name[0]}} <rp>(</rp><rt>{{data.name[1]}}</rt><rp>)</rp></rp></ruby></span>
 						{% for emote in data.flair %}
 						{{ npt_emote(emote[0], emote[1]) }}
 						{% endfor %}
 						<br />
 					</header>
 					<section>
-						{{ data.description }}
+						{% for fragment in data.description %}
+							{% if fragment is string %}
+								{{ fragment }}
+							{% else %}
+								<span title="{{fragment[0]}}">{{fragment[1]-}}</span>
+							{% endif -%}
+						{% endfor %}
 						<br />
 					</section>
 					<footer>

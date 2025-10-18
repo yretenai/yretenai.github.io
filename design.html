@@ -31,7 +31,13 @@
 				{% endfor %}
 				<br />
 				<figure>
-					{{ data.description }}
+					{% for fragment in data.description %}
+						{% if fragment is string %}
+							{{ fragment }}
+						{% else %}
+							<span title="{{fragment[0]}}">{{fragment[1]-}}</span>
+						{% endif -%}
+					{% endfor %}
 					<br/>
 				</figure>
 			</header>
@@ -50,10 +56,10 @@
 				<span>
 					{% for part in attribution.subject %}
 						{% if "link" in part %}
-						<a href="{{attribution.href}}" target="_blank" rel="noreferrer">{{part.link}}</a>
+							<a href="{{attribution.href}}" target="_blank" rel="noreferrer">{{part.link}}</a>
 						{% endif %}
 						{% if "text" in part %}
-						<span>{{part.text}}</span>
+							<span>{{part.text}}</span>
 						{% endif %}
 					{% endfor %}
 				</span>
