@@ -1,7 +1,12 @@
 {
   "name": ["Neptuwunium", "Np-93/237"],
   "flair": [["translilly", "transgender lilly emoji"], ["lesbianlilly", "lesbian lilly emoji"]],
-  "description": ["Just a transgender lesbian", ["therian", "otter"], ["robot", "drone"], "who likes to tinker on games."],
+  "description": [
+    "Just a transgender lesbian", ["therian", "otter"], ["robot", "drone"], "who likes to tinker on games."
+  ],
+  "footer": [
+    "other names i have: ", ["canonical name", "Ada,"], ["other canonical name", "Naomi,"], ["former pseudonym", "Chronovore,"], ["former game profile name", "Legiayayana,"], "and", ["still my github name", "Yretenai,"], "depending on space."
+  ],
   "attribution": [
     {
       "subject": [

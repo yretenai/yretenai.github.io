@@ -27,6 +27,16 @@
 </div>
 {%- endmacro %}
 
+{% macro npt_desc(description) -%}
+	{% for fragment in description %}
+		{% if fragment is string %}
+			{{ fragment }}
+		{% else %}
+			<span title="{{fragment[0]}}">{{fragment[1]-}}</span>
+		{% endif -%}
+	{% endfor %}
+{%- endmacro %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -57,13 +67,7 @@
 						<br />
 					</header>
 					<section>
-						{% for fragment in data.description %}
-							{% if fragment is string %}
-								{{ fragment }}
-							{% else %}
-								<span title="{{fragment[0]}}">{{fragment[1]-}}</span>
-							{% endif -%}
-						{% endfor %}
+						{{ npt_desc(data.description) }}
 						<br />
 					</section>
 					<footer>
@@ -88,6 +92,10 @@
 							{% endfor %}
 							</ul>
 						</aside>
+						<section class="end">
+						{{ npt_desc(data.footer) }}
+						</section>
+						<br />
 					</footer>
 				</article>
 				<section class="links">
