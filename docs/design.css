@@ -83,6 +83,8 @@ article {
 
 footer {
   color: var(--color-primary-blue); }
+  footer figure {
+    color: var(--color-primary-blue); }
 
 a {
   color: var(--color-primary-green); }

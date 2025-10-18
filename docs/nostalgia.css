@@ -46,7 +46,9 @@ aside small {
     width: 550pt;
     top: -100pt;
     left: 100%;
-    margin: 10pt 15pt; }
+    margin: 10pt 15pt;
+    height: calc(100vh - 200pt);
+    overflow: auto; }
     .content .info header {
       font-size: 1.33em;
       font-weight: bold; }

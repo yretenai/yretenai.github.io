@@ -55,6 +55,8 @@ aside small {
 		top: -100pt;
 		left: 100%;
 		margin: 10pt 15pt;
+		height: calc(100vh - 200pt);
+		overflow: auto;
 
 		header {
 			font-size: 1.33em;

@@ -71,6 +71,10 @@
 						<br />
 					</section>
 					<footer>
+						<section class="end">
+						{{ npt_desc(data.footer) }}
+						</section>
+						<br/>
 						{% for attribution in data.attribution %}
 						<span>
 							{% for part in attribution.subject %}
@@ -92,9 +96,6 @@
 							{% endfor %}
 							</ul>
 						</aside>
-						<section class="end">
-						{{ npt_desc(data.footer) }}
-						</section>
 						<br />
 					</footer>
 				</article>
