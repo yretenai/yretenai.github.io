@@ -17,14 +17,14 @@
     },
     {
       "subject": [
-        { "text": "lilly emoji are made by " },
-        { "link": "@maddie@maddie.rocks" }
+        { "text": "Lilly emoji are made by " },
+        { "link": "@maddie@rosemade.art" }
       ],
-      "href": "https://maddie.rocks/@maddie"
+      "href": "https://rosemade.art/@maddie"
     },
     {
       "subject": [
-        { "text": "site made by np93237, licensed under " },
+        { "text": "Site made by Np-93/237, licensed under " },
         { "link": "0BSD" }
       ],
       "href": "https://github.com/yretenai/yretenai.github.io/blob/develop/LICENSE"
