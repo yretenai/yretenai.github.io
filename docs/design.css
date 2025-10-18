@@ -115,6 +115,10 @@ section {
   section img {
     width: 24pt; }
 
+ruby > rt {
+  font-size: 75%;
+  font-weight: lighter; }
+
 @media (prefers-color-scheme: light), print {
   /*
 	:root {

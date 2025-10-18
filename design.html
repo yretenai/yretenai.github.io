@@ -15,7 +15,7 @@
 	<meta charset="utf-8" />
 	<link rel="icon" href="/favicon.ico" />
 	<meta name="viewport" content="width=device-width" />
-	<title>{{data.name}}</title>
+	<title>{{data.name[0]}}</title>
 	<script>
 		window.NEPTUNE = {{ data|safe }};
 	</script>
@@ -25,7 +25,7 @@
 	<main>
 		<article class="info">
 			<header>
-				<span>{{ data.name }}</span>
+				<span><ruby>{{data.name[0]}} <rp>(</rp><rt>{{data.name[1]}}</rt><rp>)</rp></rp></ruby></span>
 				{% for emote in data.flair %}
 				{{ npt_emote(emote[0], emote[1]) }}
 				{% endfor %}
@@ -72,5 +72,10 @@
 		</article>
 	</main>
 </body>
+<!--
+		eep!!
+			made by @ada@ublog.kimapr.net
+				with love and support from @kimapr@ublog.kimapr.net
+					-->
 
 </html>

@@ -1,5 +1,5 @@
 {
-  "name": "Np-93/237",
+  "name": ["Neptuwunium", "Np-93/237"],
   "flair": [["translilly", "transgender lilly emoji"], ["lesbianlilly", "lesbian lilly emoji"]],
   "description": "Just a transbian drone who likes to tinker on games.",
   "attribution": [
@@ -48,9 +48,15 @@
   "button": [
     {
       "href": "/button.html",
-      "title": "legiayayana's orbit",
+      "title": "neptuwunium's orbit",
       "id": "chronovore",
       "alt": "button that says 'ada', text is overlayed a photograph of neptune, which in this image is a blue gas giant"
+    },
+    {
+      "href": "https://kimapr.net/",
+      "title": "kimapr",
+      "id": "kimapr",
+      "alt": "button that has the name \"kimpar\" written manually in pixel art, on top of a chaotic mixture of color"
     },
     {
       "href": "https://lizzy.rs/",

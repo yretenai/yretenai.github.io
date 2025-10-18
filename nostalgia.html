@@ -34,7 +34,7 @@
 	<meta charset="utf-8" />
 	<link rel="icon" href="/favicon.ico" />
 	<meta name="viewport" content="width=device-width" />
-	<title>{{data.name}}</title>
+	<title>{{data.name[0]}}</title>
 	<script>
 		window.NEPTUNE = {{ data|safe }};
 	</script>
@@ -50,7 +50,7 @@
 				<div aria-label="image of neptune" id="neptune"></div>
 				<article class="info">
 					<header>
-						<span>{{ data.name }}</span>
+						<span>{{ data.name[0] }}</span>
 						{% for emote in data.flair %}
 						{{ npt_emote(emote[0], emote[1]) }}
 						{% endfor %}
@@ -96,8 +96,7 @@
 </body>
 <!--
 		eep!!
-			made by @ada@zoner.work
-				with love and support from my girlfriend @cute_stuff@mk.absturztau.be
+			made by @ada@ublog.kimapr.net
 					-->
 
 </html>
