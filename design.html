@@ -3,7 +3,7 @@
 {%- endmacro %}
 
 {% macro npt_button(id, href, title, alt, ext="png") -%}
-<a class="button-href" href="{{href}}" target="_blank" rel="noopener noreferrer" title="{{title}}">
+<a class="button-href" href="{{href}}" target="_blank" rel="noopener noreferrer" title="{{title | safe}}">
 	<img src="/button/{{id}}.{{ext}}" alt="{{alt}}" width="88px" height="31px" />
 </a>
 {%- endmacro %}
