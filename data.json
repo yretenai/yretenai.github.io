@@ -5,7 +5,7 @@
     "Just a transgender lesbian", ["therian", "otter"], ["robot", "drone"], "who likes to tinker on games."
   ],
   "footer": [
-    "Other names I have: ", ["canonical name", "Ada,"], ["other canonical name", "Naomi,"], ["former pseudonym", "Chronovore,"], ["former game profile name", "Legiayayana,"], "and", ["still my github name", "Yretenai,"], "depending on space."
+    "Other names I have: ", ["canonical name", "Ada,"], ["other canonical name", "Naomi,"], ["former pseudonym", "Chronovore,"], ["former game profile name", "Legiayayana,"], "and", ["old github name", "Yretenai,"], "depending on space."
   ],
   "attribution": [
     {
@@ -27,7 +27,7 @@
         { "text": "Site made by Np-93/237, licensed under " },
         { "link": "0BSD" }
       ],
-      "href": "https://github.com/yretenai/yretenai.github.io/blob/develop/LICENSE"
+      "href": "https://github.com/neptuwunium/neptuwunium.github.io/blob/develop/LICENSE"
     }
   ],
   "links": [
@@ -40,7 +40,7 @@
     {
       "id": "github",
       "name": "GitHub",
-      "href": "https://github.com/yretenai",
+      "href": "https://github.com/neptuwunium",
       "distance": 400
     },
     {

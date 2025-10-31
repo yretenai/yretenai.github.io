@@ -1,3 +1,3 @@
-# yretenai.github.io
+# neptuwunium.github.io
 
-The site and design for yretenai.github.io / chronovore.dev
+The site and design for neptuwunium.github.io / chronovore.dev
