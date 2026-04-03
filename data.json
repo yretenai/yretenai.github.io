@@ -82,22 +82,16 @@
       "alt": "button that has the text june girlboss.ceo, after june there is a strawberry and a bone emoji"
     },
     {
-      "href": "https://pixelde.su/",
-      "title": "pixeldesu",
-      "id": "pixeldesu",
-      "alt": "button that says 'pixel' with a character drawn in pixel art with blue hair and big round glasses, there's a rainbow color effect on the button"
-    },
-    {
-      "href": "https://neil.cyrneko.eu/",
-      "title": "neil",
-      "id": "neilcyrneko",
-      "alt": "button that consists of four asterisks on a white background"
-    },
-    {
       "href": "https://зима.net/",
       "title": "winter&",
       "id": "winter",
       "alt": "button that has the text \"winter\" with an ampersand, the text is in a serif font"
+    },
+    {
+      "href": "https://pixelde.su/",
+      "title": "pixeldesu",
+      "id": "pixeldesu",
+      "alt": "button that says 'pixel' with a character drawn in pixel art with blue hair and big round glasses, there's a rainbow color effect on the button"
     }
   ],
   "fun": {
