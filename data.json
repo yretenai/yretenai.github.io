@@ -70,10 +70,16 @@
       "alt": "button that has the name \"lizzy\", along with a logo that is a yellow star on a blue circle, a lily, a rose, an orange butterfly, a lizard, a hammer and sickle, cat ears, a grass block cube as found in voxel games, the wine logo and the proton logo. the background is the bisexual flag"
     },
     {
-      "href": "https://зима.net/",
-      "title": "winter&",
-      "id": "winter",
-      "alt": "button that has the text \"winter\" with an ampersand, the text is in a serif font"
+      "href": "https://xenia.blahaj.land/",
+      "title": "rose garden",
+      "id": "rose",
+      "alt": "button that says 'rose', a rose grows out of the o, on the left the character milk chan is visible, a very pale girl with shoulder length brown hair wearing a black hoodie"
+    },
+    {
+      "href": "https://girlboss.ceo/",
+      "title": "june strawberry bones girlboss dot ceo",
+      "id": "june",
+      "alt": "button that has the text june girlboss.ceo, after june there is a strawberry and a bone emoji"
     },
     {
       "href": "https://pixelde.su/",
@@ -82,16 +88,16 @@
       "alt": "button that says 'pixel' with a character drawn in pixel art with blue hair and big round glasses, there's a rainbow color effect on the button"
     },
     {
-      "href": "https://xenia.blahaj.land/",
-      "title": "rose garden",
-      "id": "rose",
-      "alt": "button that says 'rose', a rose grows out of the o, on the left the character milk chan is visible, a very pale girl with shoulder length brown hair wearing a black hoodie"
-    },
-    {
       "href": "https://neil.cyrneko.eu/",
       "title": "neil",
       "id": "neilcyrneko",
       "alt": "button that consists of four asterisks on a white background"
+    },
+    {
+      "href": "https://зима.net/",
+      "title": "winter&",
+      "id": "winter",
+      "alt": "button that has the text \"winter\" with an ampersand, the text is in a serif font"
     }
   ],
   "fun": {
